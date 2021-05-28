@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif, Helvetica, Arial;
+  background-color: #feffff;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+p {
+  color:#000;
+  font-family: Poppins, sans-serif;
+}
+
+/*====================Burger Menu===============*/
+#nav {
+  position: absolute;
+  min-height: 5vh;
+  width: 100vw;
+  min-width: 320px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #c06014;
+  z-index: 2;
+  
+}
+.burger-menu {
+  margin-left: 15px;
+  padding: 5px;
+  width: 25px;
+  cursor: pointer;
+  background-color: #c06014;
+}
+.burger-menu div {
+  transition: 0.6s ease all;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1px;
+  transition: 0.4s ease all;
+}
+#bar1 {
+  transform: translateY(-3px);
+}
+#bar3 {
+  transform: translateY(3px);
+}
+/*============Hamburger Toggle To Back Arrow===========*/
+.burger-toggle #bar1 {
+  transform: translateY(12px) rotateZ(-135deg);
+}
+.burger-toggle #bar2 {
+  transform: translateX(9px) rotateZ(720deg);
+}
+.burger-toggle #bar3 {
+  transform: translateY(-12px) rotateZ(135deg);
+}
+.burger-toggle {
+  display: inline-block;
+}
+.burger-toggle .bar {
+  background-color: #fff;
+}
+/*===============Navigation Links================*/
+.nav-links {
+  position: absolute;
+  padding: 0;
+  top: 3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5;
+  background-color: #424642;
+  width: 100vw;
+  transform: translateX(-100%);
+  transition: 0.4s ease-in;
+  z-index: 3;
+  
+}
+.nav-links li {
+  list-style: none;
+  opacity: 0;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 36px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+.nav-links li a:hover {
+  font-weight: bolder;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/*=============Toggle For Navigation Links===============*/
+.nav-links-toggle {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*=================Welcome Section===================*/
+#welcome {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  background-color: #f3f4ed;
+  padding-top: 45px;
+  height: 100vh;
+}
+#welcome h1 {
+  line-height: 1;
+  text-align: center;
+  font-size: 28px;
+  font-family: Poppins, sans-serif;
+  color:#000;
+  line-height: 1;
+}
+#welcome h2 {
+  line-height: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: #536162;
+}
+#welcome i {
+  color: #c06014;
+  font-size: 35px;
+}
+#me-image {
+  width: 250px;
+  border-radius: 15px;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.about-me p {
+  min-width: 320px;
+  font-size: 16px;
+}
+/*===================Project Section=====================*/
+#projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  background-color: #f3f4ed;
+  padding-top: 45px;
+  height: 100vh;
+}
+#projects h1 {
+  letter-spacing: 3px;
+}
+#projects p {
+  color: #edf5e1;
+  letter-spacing: 3px;
+}
+#project-tile-1 {
+  color: #05386b;
+  border-color: #05386b;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+#project-tile-2 {
+  color: #05386b;
+  border-color: #05386b;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.project-tiles {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+.project-tiles a {
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #05386b;
+  cursor: pointer;
+}
+.project-tiles a:hover {
+  background-color: #379683;
+  transition: 0.5s ease;
+}
+.project-img {
+  max-width: 200px;
+}
+
+/*=======================Contacts Section====================*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  background-color: #f3f4ed;
+  padding-top: 145px;
+  height: 100vh;
+}
+#container-contact{
+  min-height:100vh;
+}
+#contact-icons i {
+  font-size: 60px;
+  color: #c06014;
+}
+#contact-form {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts input {
+  display: flex;
+  width: 300px;
+  text-align: center;
+  margin: 1px 0 1px 0;
+  border: 1px solid #000;
+  background-color: #f3f4ed;
+  font-family: Poppins, sans-serif;
+}
+#btn {
+  cursor: pointer;
+  background-color: #c06014;
+  border: 1px solid;
+  border-radius: 5px;
+  color: #edf5e1;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+.text-area {
+  background-color: #f3f4ed;
+  font-family: Poppins, sans-serif;
+  min-width: 300px;
+  text-align: center;
+  overflow: auto;
+  height: 80px;
+}
+#contact-form div {
+  font-size: 12px;
+  font-style: italic;
+  color: #000;
+}
+.gotcha{
+  display: none;
+}
+.g-recaptcha div{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 320px;
+}
+/*======================Footer=============================*/
+footer {
+  background-color: #536162;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  height: 3em;
+  width: 100vw;
+  min-width: 320px;
+}
+/*==========================Media Queries=====================*/
+@media only screen and (min-width: 500px) {
+  .about-me p{
+    text-align: left;
+    max-width: 420px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about-me p{
+    text-align: left;
+    font-size: 22px;
+  }
+  
+}
+@media only screen and (min-width: 1200px) {
+  
+  .header {
+    flex-basis: 100%;
+  }
+  .about-me { 
+    flex-basis: 100%;
+  }
+  .about-me p{  
+    text-align: left;
+    padding-bottom: 150px;
+  }
+  #container_header-about-me{
+    display: flex;
+  }
+}

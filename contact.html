@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap"> 
+    <script src="https://kit.fontawesome.com/3bd20539e3.js"crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>    
+    <title>Jeremy Crump</title>
+</head>
+<body>
+    <!---------------------------Start Hamburger------------------------->
+    <nav id="nav">
+      <div class="burger-menu">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+    </nav>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="jeremycrump- resume.pdf">Resume</a></li>
+    </ul>
+    <!----------------------------End Hamburger-------------------------->
+    <!-------------------------Start Contact Section--------------------->
+    <section id="contact" class="sections">
+      <div id="container-contact">
+        <div id="contact-icons" class="icons">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div>
+          <h1>Let's get connected</h1>
+          <p>Send me a message</p>
+          <form
+            id="contact-form"
+            method="POST"
+            action="https://formspree.io/xwklvovw"
+            class="contacts">
+            <input placeholder="First Name" type="text" name="firstName">
+            <input placeholder="Last Name" type="text" name="lastName">
+            <input placeholder="E-mail" type="email" name="email">
+            <textarea
+              maxlength="250"
+              style="resize: none;"
+              placeholder="Send me a quick message."
+              class="text-area"
+              name="message">
+            </textarea>
+            <div>Max Characters : 250</div>
+            <input
+              class="gotcha"
+              type="text"
+              style="display: none;"
+              name="_gotcha">
+            <input id="btn" type="submit" value="Send">
+            <br>
+            <div
+              class="g-recaptcha"
+              data-size="compact "
+              data-sitekey="6LdwLvkaAAAAABybHV8G-3pZoJlipms9cB1beM3g">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>| Copyright© 2020 Jeremy Crump |</footer>
+    <!---------------------------End Welcome Section---------------------->
+    <script src="https://kit.fontawesome.com/3bd20539e3.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
