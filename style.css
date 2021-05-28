@@ -144,10 +144,6 @@ p {
   color: #c06014;
   font-size: 35px;
 }
-#me-image {
-  width: 250px;
-  border-radius: 15px;
-}
 .about-me {
   display: flex;
   justify-content: center;
@@ -285,6 +281,23 @@ p {
   position: relative;
   max-width: 320px;
 }
+/*======================Resume Section============================*/
+#resume{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  background-color: #f3f4ed;
+  padding-top: 45px;
+  height: 100vh;
+}
+#resume img {
+  width: 550px;
+}
+
 /*======================Footer=============================*/
 footer {
   background-color: #536162;
