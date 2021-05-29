@@ -20,8 +20,7 @@ p {
   justify-content: flex-start;
   align-items: center;
   background-color: #c06014;
-  z-index: 2;
-  
+  z-index: 2; 
 }
 .burger-menu {
   margin-left: 15px;
