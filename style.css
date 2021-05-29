@@ -314,6 +314,9 @@ footer {
     max-width: 420px;
     font-size: 20px;
   }
+  #resume img {
+  width: 450px;
+}
 }
 @media only screen and (min-width: 768px) {
   .about-me p{
