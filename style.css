@@ -294,7 +294,7 @@ p {
   height: 100vh;
 }
 #resume img {
-  width: 550px;
+  width: 450px;
 }
 
 /*======================Footer=============================*/
@@ -341,5 +341,8 @@ footer {
   }
   #container_header-about-me{
     display: flex;
+  }
+  #resume img {
+  width: 650px;
   }
 }
